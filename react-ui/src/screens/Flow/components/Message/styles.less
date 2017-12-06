@@ -1,0 +1,54 @@
+.dialog {
+	&__choices {
+		display: inline-block;
+		position: relative;
+		background: #ffffff;
+		text-align: left;
+		border-radius: 3px;
+		font-size: 20px;
+		padding: 30px 25px;
+		&-title{
+			font-size: 22px;
+			line-height: 1.3;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		&-btn{
+			background: white;
+			border: 2px solid #fc4654;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			position: relative;
+			padding: 15px 17px;
+			border-radius: 4px;
+			text-align: left;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #333333;
+			margin-bottom: 8px;
+			width: 100%;
+			cursor: pointer;
+			&.start-over{
+				border: 0;
+				background: #fc4654;
+				width: auto;
+				padding: 9px 17px;
+				color: #ffffff;
+				font-weight: 900;
+			}
+		}
+		&-path{
+			font-size: 12px;
+			font-style: italic;
+			display: block;
+			color: #fc4654;
+			padding-bottom: 12px;
+		}
+	}
+	&__viewPoint{
+		display: block;
+		padding-bottom: 20px;
+	}
+}

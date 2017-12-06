@@ -1,7 +1,7 @@
 var path = require('path');
 
 var rootPath = path.join(__dirname, '/../..');
-var staticPath = path.join(__dirname, '/../react-ui/public/');
+var staticPath = path.join(__dirname, '/../react-ui/build/');
 
 var settings = {
 	rootPath: rootPath,

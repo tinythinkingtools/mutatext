@@ -31,6 +31,7 @@ export default (props) => {
 
 							props.propSetState({
 								activeMessageFromUser: item.text,
+								userActions: {},
 								typingText: true
 							}, () => {
 								props.moveConversation({name: 'LetsMutatext'});
@@ -49,6 +50,7 @@ export default (props) => {
 						props.userWriteToDialog('Start over');
 						props.propSetState({
 							activeMessageFromUser: '',
+							userActions: {},
 							typingText: true
 						}, () => {
 							props.moveConversation({name: 'AskUser'});
@@ -68,6 +70,7 @@ export default (props) => {
 			props.sendMessageToDialog({ 'type': 'error', 'value': data.message });
 			props.propSetState({
 				activeMessageFromUser: '',
+				userActions: {},
 				typingText: true
 			}, () => {
 				props.moveConversation({name: 'AskUser'});

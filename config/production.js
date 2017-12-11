@@ -10,10 +10,6 @@ var settings = {
 	port: process.env.PORT || 5000,
 	bodyLimit: '100kb',
 	adminEmail: 'dus.blinov@gmail.com',
-	emailFrom: 'noreply@mutatext.co',
-	mailgun: {
-		apiKey: 'key-e6e4cfd91ba4c399b3a714b416fe6979',
-		domain: 'mg.meetpa.co'
-	}
+	emailFrom: 'noreply@mutatext.co'
 }
 module.exports = settings;
